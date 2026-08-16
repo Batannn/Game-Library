@@ -1,12 +1,44 @@
+# Node / Next.js
 node_modules/
-__pycache__/
-*.pyc
-*.pyo
-.env
-.env.local
-.DS_Store
-.vscode/
+.next/
+out/
 dist/
 build/
-.next/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python / FastAPI
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+*.sqlite3
+*.db
+
+# Environment and editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local app data
+backend/games.db
+backend/static/covers/*
+!backend/static/covers/.gitkeep
+
+# OS / logs
 *.log
